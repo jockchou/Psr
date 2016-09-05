@@ -2,7 +2,6 @@ namespace Psr\Http\Message;
 
 interface MessageInterface
 {
-/*
     public function getProtocolVersion() -> string;
 
     public function withProtocolVersion(string version);
@@ -13,7 +12,7 @@ interface MessageInterface
 
     public function getHeader(string name) -> array;
 
-    public function getHeaderLine(string name) string;
+    public function getHeaderLine(string name) -> string;
 
     public function withHeader(string name, var value);
 
@@ -23,5 +22,5 @@ interface MessageInterface
 
     public function getBody() -> <StreamInterface>;
 
-    public function withBody(<StreamInterface> body);*/
+    public function withBody(<StreamInterface> body);
 }
