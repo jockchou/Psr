@@ -1,0 +1,5 @@
+
+extern zend_class_entry *psr_http_message_messageinterface_ce;
+
+ZEPHIR_INIT_CLASS(Psr_Http_Message_MessageInterface);
+
