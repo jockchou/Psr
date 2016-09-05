@@ -2,6 +2,9 @@ namespace Psr\Http\Message;
 
 interface StreamInterface
 {
+	const SEEK_SET = 0;
+	const SEEK_CUR = 1;
+	const SEEK_END = 2;
 
     public function __toString() -> string;
 
@@ -17,7 +20,7 @@ interface StreamInterface
 
     public function isSeekable() -> boolean;
 
-    public function seek(int offset, int whence);
+    public function seek(int offset, int whence = self::SEEK_SET);
 
     public function rewind();
 

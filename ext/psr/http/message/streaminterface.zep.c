@@ -16,6 +16,12 @@ ZEPHIR_INIT_CLASS(Psr_Http_Message_StreamInterface) {
 
 	ZEPHIR_REGISTER_INTERFACE(Psr\\Http\\Message, StreamInterface, psr, http_message_streaminterface, psr_http_message_streaminterface_method_entry);
 
+	zend_declare_class_constant_long(psr_http_message_streaminterface_ce, SL("SEEK_SET"), 0 TSRMLS_CC);
+
+	zend_declare_class_constant_long(psr_http_message_streaminterface_ce, SL("SEEK_CUR"), 1 TSRMLS_CC);
+
+	zend_declare_class_constant_long(psr_http_message_streaminterface_ce, SL("SEEK_END"), 2 TSRMLS_CC);
+
 	return SUCCESS;
 
 }
