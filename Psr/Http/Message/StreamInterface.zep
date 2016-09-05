@@ -17,7 +17,7 @@ interface StreamInterface
 
     public function isSeekable() -> boolean;
 
-    public function seek(int offset, int whence = SEEK_SET);
+    public function seek(int offset, int whence);
 
     public function rewind();
 

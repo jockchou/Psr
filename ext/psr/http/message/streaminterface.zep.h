@@ -3,7 +3,7 @@ extern zend_class_entry *psr_http_message_streaminterface_ce;
 
 ZEPHIR_INIT_CLASS(Psr_Http_Message_StreamInterface);
 
-ZEND_BEGIN_ARG_INFO_EX(arginfo_psr_http_message_streaminterface_seek, 0, 0, 1)
+ZEND_BEGIN_ARG_INFO_EX(arginfo_psr_http_message_streaminterface_seek, 0, 0, 2)
 	ZEND_ARG_INFO(0, offset)
 	ZEND_ARG_INFO(0, whence)
 ZEND_END_ARG_INFO()
