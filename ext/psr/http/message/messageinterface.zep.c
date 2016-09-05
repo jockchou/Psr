@@ -14,7 +14,7 @@
 
 ZEPHIR_INIT_CLASS(Psr_Http_Message_MessageInterface) {
 
-	ZEPHIR_REGISTER_INTERFACE(Psr\\Http\\Message, MessageInterface, Psr, psr_http_message_messageinterface, NULL);
+	ZEPHIR_REGISTER_INTERFACE(Psr\\Http\\Message, MessageInterface, psr, http_message_messageinterface, NULL);
 
 	return SUCCESS;
 
