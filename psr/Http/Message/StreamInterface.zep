@@ -6,6 +6,7 @@ interface StreamInterface
 	const SEEK_CUR = 1;
 	const SEEK_END = 2;
 
+	
     public function __toString() -> string;
 
     public function close() -> void;
