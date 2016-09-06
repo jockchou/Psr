@@ -28,7 +28,12 @@
 
 
 zend_class_entry *psr_http_message_messageinterface_ce;
+zend_class_entry *psr_http_message_requestinterface_ce;
+zend_class_entry *psr_http_message_responseinterface_ce;
+zend_class_entry *psr_http_message_serverrequestinterface_ce;
 zend_class_entry *psr_http_message_streaminterface_ce;
+zend_class_entry *psr_http_message_uploadedfileinterface_ce;
+zend_class_entry *psr_http_message_uriinterface_ce;
 
 ZEND_DECLARE_MODULE_GLOBALS(psr)
 
@@ -55,7 +60,12 @@ static PHP_MINIT_FUNCTION(psr)
 #endif
 	REGISTER_INI_ENTRIES();
 	ZEPHIR_INIT(Psr_Http_Message_MessageInterface);
+	ZEPHIR_INIT(Psr_Http_Message_RequestInterface);
+	ZEPHIR_INIT(Psr_Http_Message_ResponseInterface);
+	ZEPHIR_INIT(Psr_Http_Message_ServerRequestInterface);
 	ZEPHIR_INIT(Psr_Http_Message_StreamInterface);
+	ZEPHIR_INIT(Psr_Http_Message_UploadedFileInterface);
+	ZEPHIR_INIT(Psr_Http_Message_UriInterface);
 
 #if PHP_VERSION_ID < 50500
 	setlocale(LC_ALL, old_lc_all);
