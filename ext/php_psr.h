@@ -14,7 +14,7 @@
 #define PHP_PSR_VERSION     "0.0.1"
 #define PHP_PSR_EXTNAME     "psr"
 #define PHP_PSR_AUTHOR      ""
-#define PHP_PSR_ZEPVERSION  "0.9.4a-dev-cbfe80715d"
+#define PHP_PSR_ZEPVERSION  "0.9.4a-dev-7e304ba18c"
 #define PHP_PSR_DESCRIPTION ""
 
 
