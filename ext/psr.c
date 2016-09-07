@@ -28,7 +28,10 @@
 
 
 zend_class_entry *psr_http_message_messageinterface_ce;
+zend_class_entry *psr_container_exception_containerexceptioninterface_ce;
 zend_class_entry *psr_http_message_requestinterface_ce;
+zend_class_entry *psr_container_containerinterface_ce;
+zend_class_entry *psr_container_exception_notfoundexceptioninterface_ce;
 zend_class_entry *psr_http_message_responseinterface_ce;
 zend_class_entry *psr_http_message_serverrequestinterface_ce;
 zend_class_entry *psr_http_message_streaminterface_ce;
@@ -60,7 +63,10 @@ static PHP_MINIT_FUNCTION(psr)
 #endif
 	REGISTER_INI_ENTRIES();
 	ZEPHIR_INIT(Psr_Http_Message_MessageInterface);
+	ZEPHIR_INIT(Psr_Container_Exception_ContainerExceptionInterface);
 	ZEPHIR_INIT(Psr_Http_Message_RequestInterface);
+	ZEPHIR_INIT(Psr_Container_ContainerInterface);
+	ZEPHIR_INIT(Psr_Container_Exception_NotFoundExceptionInterface);
 	ZEPHIR_INIT(Psr_Http_Message_ResponseInterface);
 	ZEPHIR_INIT(Psr_Http_Message_ServerRequestInterface);
 	ZEPHIR_INIT(Psr_Http_Message_StreamInterface);

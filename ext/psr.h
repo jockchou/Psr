@@ -5,7 +5,10 @@
 #define ZEPHIR_CLASS_ENTRIES_H
 
 #include "psr/http/message/messageinterface.zep.h"
+#include "psr/container/exception/containerexceptioninterface.zep.h"
 #include "psr/http/message/requestinterface.zep.h"
+#include "psr/container/containerinterface.zep.h"
+#include "psr/container/exception/notfoundexceptioninterface.zep.h"
 #include "psr/http/message/responseinterface.zep.h"
 #include "psr/http/message/serverrequestinterface.zep.h"
 #include "psr/http/message/streaminterface.zep.h"

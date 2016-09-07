@@ -1,0 +1,5 @@
+
+extern zend_class_entry *psr_container_exception_notfoundexceptioninterface_ce;
+
+ZEPHIR_INIT_CLASS(Psr_Container_Exception_NotFoundExceptionInterface);
+
